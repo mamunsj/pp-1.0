@@ -55,6 +55,7 @@ addButton.addEventListener("click", addRow);
 const navMenu = document.querySelector(".nav-menu");
 
 const hamburger = document.querySelector(".hamburger");
+const anchor = navMenu.querySelectorAll("li");
 hamburger.addEventListener("click", function () {
   // if ((navMenu.style.display = "none")) {
   //   navMenu.style.display = "block";
@@ -63,5 +64,13 @@ hamburger.addEventListener("click", function () {
   // }
   setTimeout(() => {
     navMenu.classList.toggle("show");
-  }, 200);
+  }, 100);
+});
+
+anchor.forEach((element) => {
+  element.addEventListener("click", function () {
+    setTimeout(() => {
+      navMenu.classList.toggle("show");
+    }, 100);
+  });
 });
