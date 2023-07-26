@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data table with toolbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <div class="logo-img"></div>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#customer">Customer</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#media">Media & Others</a></li>
+        </ul>
+        <div class="hamburger" role="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+      <div class="flex-col-first">
+        <img
+          src="images/express-delivery-home-banner-june-982x500.webp"
+          alt=""
+        />
+      </div>
+      <div class="flex-col-sec">
+        <div class="col-sec-top">
+          <h2>Compare Product</h2>
+          <p>Choose Products to Compare</p>
+          <input type="text" placeholder="Search and select product" />
+          <input type="text" placeholder="Search and select product" />
+          <button>View Comparison</button>
+        </div>
+        <div class="col-sec-bottom">
+          <img src="images/budget-desktop-pc.webp" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="shop-section" id="products">
+      <div class="box1 box">
+        <div class="box-content">
+          <h2>Home refresh ideas</h2>
+          <div
+            class="box-img"
+            style="background-image: url('images/box1_image.jpg')"
+          ></div>
+          <p><a href="#">see more</a></p>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2>Health & Personal Care</h2>
+          <div
+            class="box-img"
+            style="background-image: url('images/box2_image.jpg')"
+          ></div>
+          <p><a href="#">see more</a></p>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h2>Shop Laptops & Tablets</h2>
+          <div
+            class="box-img"
+            style="background-image: url('images/box3_image.jpg')"
+          ></div>
+          <p><a href="#">see more</a></p>
+        </div>
+      </div>
+      <div class="box4 box">
+        <div class="box-content">
+          <h2>Devices & Electronics</h2>
+          <div
+            class="box-img"
+            style="background-image: url('images/box4_image.jpg')"
+          ></div>
+          <p><a href="#">see more</a></p>
+        </div>
+      </div>
+      <div class="box5 box">
+        <div class="box-content">
+          <h2>Beauty picks</h2>
+          <div
+            class="box-img"
+            style="background-image: url('images/box5_image.jpg')"
+          ></div>
+          <p><a href="#">see more</a></p>
+        </div>
+      </div>
+      <div class="box6 box">
+        <div class="box-content">
+          <h2>Pet Care</h2>
+          <div
+            class="box-img"
+            style="background-image: url('images/box6_image.jpg')"
+          ></div>
+          <p><a href="#">see more</a></p>
+        </div>
+      </div>
+      <div class="box7 box" id="offerDeal">
+        <div class="box-content">
+          <h2>New Arrivals in Toys</h2>
+          <div
+            class="box-img"
+            style="background-image: url('images/box7_image.jpg')"
+          ></div>
+          <p><a href="#">see more</a></p>
+        </div>
+      </div>
+      <div class="box8 box">
+        <div class="box-content">
+          <h2>For your Fitness Needs</h2>
+          <div
+            class="box-img"
+            style="background-image: url('images/box8_image.jpg')"
+          ></div>
+          <p><a href="#">see more</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="table-container" id="customer">
+      <div class="table-top">
+        <h2>Customer <span>Details</span></h2>
+        <input id="searchInput" type="text" placeholder="Search..." />
+      </div>
+      <div class="table-body">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Address</th>
+              <th>City</th>
+              <th>Pin Code</th>
+              <th>Country</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Thomas Hardy</td>
+              <td>89 Chairoscuro Rd.</td>
+              <td>Portland</td>
+              <td>97217</td>
+              <td>🇺🇸</td>
+              <td class="table-actions">
+                <div class="table-action-flex">
+                  <i class="fa-solid fa-eye eyeColor"></i>
+                  <i class="fa-solid fa-pen penColor"></i>
+                  <i class="fa-solid fa-trash trashColor"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Tarek Monwer</td>
+              <td>2 Nikunja Rd.</td>
+              <td>Dhaka</td>
+              <td>23444</td>
+              <td>🇧🇩</td>
+              <td class="table-actions">
+                <div class="table-action-flex">
+                  <i class="fa-solid fa-eye eyeColor"></i>
+                  <i class="fa-solid fa-pen penColor"></i>
+                  <i class="fa-solid fa-trash trashColor"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Mamun Sj</td>
+              <td>8 Shahbagh Fullar Rd.</td>
+              <td>Dhaka</td>
+              <td>32382</td>
+              <td>🇧🇩</td>
+              <td class="table-actions">
+                <div class="table-action-flex">
+                  <i class="fa-solid fa-eye eyeColor"></i>
+                  <i class="fa-solid fa-pen penColor"></i>
+                  <i class="fa-solid fa-trash trashColor"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Bilkis Hany</td>
+              <td>4 Rab-al-khali Rd.</td>
+              <td>Amman</td>
+              <td>03842</td>
+              <td>🇾🇪</td>
+              <td class="table-actions">
+                <div class="table-action-flex">
+                  <i class="fa-solid fa-eye eyeColor"></i>
+                  <i class="fa-solid fa-pen penColor"></i>
+                  <i class="fa-solid fa-trash trashColor"></i>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Ujjal Miah</td>
+              <td>1 Jahurudding Rd.</td>
+              <td>Aushkandi</td>
+              <td>15623</td>
+              <td>🇸🇦</td>
+              <td class="table-actions">
+                <div class="table-action-flex">
+                  <i class="fa-solid fa-eye eyeColor"></i>
+                  <i class="fa-solid fa-pen penColor"></i>
+                  <i class="fa-solid fa-trash trashColor"></i>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-bottom">
+        <p>Showing 5 out 25 entries</p>
+        <div class="table-link">
+          <a href="#"><<</a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#">>></a>
+        </div>
+      </div>
+      <p class="addRow"><button id="addButton">Add Row</button></p>
+    </section>
+
+    <footer id="about">
+      <div class="foot-top">
+        <a href="#">Back to top</a>
+      </div>
+      <div class="foot-panel2">
+        <ul>
+          <p>Get to know Us</p>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+          <a href="#">About Us</a>
+          <a href="#">Investor Relations</a>
+          <a href="#">Our Devices</a>
+        </ul>
+        <ul>
+          <p>Make Money with Us</p>
+          <a href="#">Sell products on Amazon</a>
+          <a href="#">Sell on Amazon Business</a>
+          <a href="#">Sell apps on Amazon</a>
+          <a href="#">Become an Affiliate</a>
+          <a href="#">Advertise Your Products</a>
+          <a href="#">Self-Publish with Us</a>
+          <a href="#">Host an Amazon Hub</a>
+          <a href="3">See More Make Money with Us</a>
+        </ul>
+        <ul>
+          <p>Amazon Payment Products</p>
+          <a href="#">Amazon Business Card</a>
+          <a href="#">Shop with Points</a>
+          <a href="#">Reload Your Balance</a>
+          <a href="#">Amazon Currency Converter</a>
+        </ul>
+        <ul>
+          <p>Let Us Help You</p>
+          <a href="#">Amazon and COVID-19</a>
+          <a href="#">Your Account</a>
+          <a href="#">Your Orders</a>
+          <a href="#">Shipping Rates & Policies</a>
+          <a href="#">Returns & Replacements</a>
+          <a href="#">Manage Your Content and Devices</a>
+          <a href="#">Amazon Assistant</a>
+          <a href="#">Help</a>
+        </ul>
+      </div>
+
+      <div class="footer-logo">
+        <div class="logo-img"></div>
+      </div>
+
+      <div class="footer-panel3" id="home">
+        <div class="pages">
+          <a href="#">Condition of Use</a>
+          <a href="#">Privacy Notice</a>
+          <a href="#">Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+          <a href="#"> © 1996-2023, Starteck.com, Inc. or its affiliates.</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
