@@ -262,7 +262,6 @@ nav {
 /* Table section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.. */
 
 .table-container {
-  min-height: 80vh;
   width: 96%;
   margin: auto;
   background: #ffffff;
