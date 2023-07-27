@@ -204,7 +204,7 @@ nav {
 }
 
 .shop-section h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
@@ -263,7 +263,7 @@ nav {
 
 .table-container {
   min-height: 80vh;
-  width: 90%;
+  width: 96%;
   margin: auto;
   background: #ffffff;
   padding: 2.6rem 2rem;
@@ -417,10 +417,12 @@ i:hover {
 }
 
 /* Contact Form >>>>>>>> */
+
 .contact {
-  width: 100%;
+  width: 96%;
+  margin: 4rem auto;
   min-height: 400px;
-  padding: 5%;
+  /* padding: 5%; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -522,20 +524,24 @@ footer a {
   min-height: 300px;
   background-color: #232f3e;
   display: flex;
+  flex-direction: row !important;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding-block: 3rem;
+  padding-inline: 1rem;
   color: white;
   font-size: 1.6rem;
+  gap: 1rem;
+  text-align: center;
 }
 
 .foot-panel2 ul {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 
 .foot-panel2 a {
   display: block;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   font-size: 1.4rem;
   font-weight: bold;
   color: #9da9b8;
@@ -555,7 +561,7 @@ ul > p {
 }
 
 .footer-logo {
-  height: 70px;
+  height: 60px;
   background: #232f3e;
   border-top: 0.3px solid rgb(151, 150, 150);
   display: flex;
@@ -567,11 +573,12 @@ ul > p {
   background-image: url(images/logo.png);
   background-size: cover;
   width: 100px;
-  height: 50px;
+  height: 40px;
 }
 
 .footer-panel3 {
   height: 100px;
+  height: auto;
   background-color: #222424;
   text-align: center;
   padding-top: 1.4rem;
@@ -583,19 +590,19 @@ ul > p {
 }
 
 .pages {
-  font-weight: bold;
-  padding-bottom: 0.8rem;
+  display: block;
 }
 
 .pages a {
   margin-left: 2rem;
+  font-size: 1.2rem;
 }
 
 .copyright {
   font-size: 0.75rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   nav {
     border-bottom: 1px solid rgb(167, 165, 162);
   }
@@ -666,7 +673,22 @@ ul > p {
 
   /* shop section >>>>>>>>>>>>>>>>>> */
 
+  .box {
+    width: 90%;
+    padding: 2rem 1rem;
+    margin-block: 2rem;
+    text-align: center;
+  }
+
+  .box h2 {
+    margin-bottom: 2rem;
+  }
+
   /* Table section >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  .table-container {
+    width: 90%;
+  }
 
   .table-top {
     display: block;
@@ -762,7 +784,10 @@ ul > p {
   }
 
   /* Contact Form >>>>>>>> */
+
   .contact {
+    width: 90%;
+    margin: 4rem auto;
     padding: 0;
     flex-direction: column;
     align-items: baseline;
@@ -775,11 +800,13 @@ ul > p {
 }
 /* footer >>>>>>>>> */
 
-.foot-panel2 {
-  justify-content: space-between;
-  padding: 2rem;
-  font-size: 1.4rem;
-  gap: 1rem;
+.foot-panel2 ul {
+  /* text-align: center; */
+  margin-bottom: 3rem;
+}
+
+ul:last-child {
+  margin-bottom: 0;
 }
 
 .foot-panel2 a {
@@ -801,12 +828,16 @@ ul > p {
 }
 
 .pages a {
-  margin-top: 1rem;
-  display: block;
+  margin-left: 1rem;
+  font-size: 1rem;
 }
 
 .copyright {
+  margin-top: 1rem;
   padding-bottom: 2rem;
+}
+.copyright a {
+  font-size: 0.9rem;
 }
 
 @media (min-width: 770px) and (max-width: 1024px) {
@@ -819,5 +850,11 @@ ul > p {
   .nav-menu a {
     padding: 10px;
     font-size: 16px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 769px) {
+  .box-img {
+    height: 450px;
   }
 }
